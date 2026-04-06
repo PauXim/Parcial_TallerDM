@@ -47,7 +47,7 @@ body {
     border-radius: var(--radio-border);
 }
 
-/* ABOUT (2 Columnas) */
+/* ABOUT */
 .about-section { display: flex; gap: 60px; padding: 60px 0; align-items: flex-start; }
 .about-title { flex: 1; }
 .about-title h2 { font-size: 2.2rem; line-height: 1.1; text-transform: uppercase; color: var(--color-texto-h); }
@@ -69,13 +69,11 @@ body {
     border-radius: var(--radio-border);
     overflow: hidden;
     box-shadow: var(--sombra-suave);
-    /* Estado inicial para animación */
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Clase que activa el JS */
 .service-card.reveal {
     opacity: 1;
     transform: translateY(0);
@@ -89,7 +87,9 @@ body {
 .btn-primario { background: var(--color-primario); color: white; }
 .cta-banner { background: var(--color-primario); color: white; padding: 80px 0; }
 .btn-blanco { background: white; color: var(--color-primario); }
-.footer { padding: 40px 0; background: #111827; color: white; text-align: center; }
+
+/* FOOTER SOLO CRÉDITOS */
+.footer { padding: 30px 0; background: #111827; color: white; text-align: center; font-size: 0.85rem; letter-spacing: 1px; }
 
 @media (max-width: 768px) {
     .about-section { flex-direction: column; gap: 30px; }
